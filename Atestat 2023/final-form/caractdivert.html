@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  min-width: 100%;
+  margin: 0;
+}
+
+.content-home {
+  margin-top: 450px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(199, 187, 187);
+  opacity: 0.5;
+  top: 0px;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: rgb(199, 187, 187);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: black;
+  text-decoration-line: underline;
+  font-weight: bold;
+  
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+</style>
+</head>
+<body>
+ 
+<div class="topnav" id="myTopnav">
+  <a href="contact.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Services 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="industria.html">Industria</a>
+      <a href="utilizari casnice.html">Utilizari casnice</a>
+      <a href="divertisment.html">Divertisment</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Fictiune 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cinematografie.html">Cinematografie</a>
+      <a href="cyberwarfare.html">Cyberwarfare</a>
+    </div>
+  </div> 
+  <a href="home.html" class="active">Home</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="centered"><h3>Caracteristici:</h3>
+    <ul>
+        <li>Vârsta copilului: Este primul criteriu care ar trebui să fie luat în considerare, pentru că anumite jucării sunt mai avansate,<br>
+        cu diferite caracteristici și funcții, care nu ar fi tocmai potrivite pentru un copil prea mic. Totodată, trebuie să vă gândiți la <br>
+        vârsta copilului, pentru dacă este una mai înaintată și primește o jucărie prea simplă, banală, atunci se poate plictisi foarte rapid <br>
+        și o va arunca lângă alte jucării de care deja s-a plictisit și probabil nu vă doriți asta, mai ales că veți cheltui și o anumită sumă <br>
+        de bani. Încercați să luați jucării care să îi provoace pe cei mici, chiar dacă provocările sunt diferite de la o vârstă la alta, contează <br>
+        mult să își aducă în joc imaginația, creativitatea și gândirea logică.</li>
+        <li>Scop: Ca orice jucărie, și roboții includ o parte educativă. Roboții pentru copii mai mici pot contribui la primii pași în dezvoltarea <br>
+        abilităților motrice, la învățarea primelor litere din alfabet și cifre, pot primi comenzi și astfel îi stimulează pe cei mici să comunice <br>
+        cât mai mult etc. În cazul copiilor mai mari, roboții pot fi și ei mai complecși, le permit copiilor să reconstruiască jucăriile, să le aducă <br>
+        la o formă mai avansată, să asculte povești de la roboți, să învețe cum să își pună creativitatea în joc.</li>
+        <li>Funcționalități: Există diverse tipuri de roboți de jucărie, fiecare în parte având anumite funcții proprii, benefice pentru copii. <br>
+        Pe piață veți găsi roboți care se pot încărca pe baza luminii solare, fiind mult mai prietenoși cu mediul înconjurător. Sunt produse destinate <br>
+        copiilor pasionați de natură, ecologie, iar alături de noua lor jucărie pot vedea cum robotul prinde viață cu ajutorul luminii soarelui. Un alt <br>
+        model de robot este cel cu funcție educativă, ajutându-l pe cel mic să învețe alfabetul, să își dezvolte vocabularul și alte abilități de <br>
+        comunicare interumană, deși poate părea ironic că ar putea învăța asta de la un robot. Iar un al treilea model este cel care poate fi asamblat <br>
+        și reasamblat, cu ajutorul unui mici șurubelnițe, astfel băiețelul va putea juca rolul meșterului pe care și-l va asuma în totalitate!</li>
+    </div>
+
+</body>
+</html>

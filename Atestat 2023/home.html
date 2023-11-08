@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  min-width: 100%;
+  margin: 0;
+}
+
+.content-home {
+  margin-top: 450px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(199, 187, 187);
+  opacity: 0.5;
+  top: 0px;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: rgb(199, 187, 187);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: black;
+  text-decoration-line: underline;
+  font-weight: bold;
+  
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 6%;
+  font-size: 80px;
+  color: white;
+}
+
+.title2 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30%;
+  font-size: 60px;
+  color: white;
+  margin-block-start: 80px;
+}
+
+.industrie {
+  position: absolute;
+  font-size: 20px;
+  margin-inline-start: 9.5%;
+  margin-inline-end: 25%;
+}
+
+.pindustrie {
+  position: absolute;
+  margin-block-start: -145px;
+  margin-inline-start: 100%;
+}
+
+.imghome {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.divertisment {
+  position: absolute;
+  font-size: 20px;
+  margin-inline-start: 30%;
+  margin-inline-end: -29%;
+  margin-block-start: 1%;
+}
+
+.pdivertisment {
+  position: absolute;
+  margin-inline-start: -30%;
+  margin-block-start: 2%;
+}
+
+.textdivert{
+  margin-inline-start: 1%;
+}
+
+.button {
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+ background: rgb(255, 132, 43);
+ color: ghostwhite;
+ margin-inline-start: 50%;
+ justify-content: center;
+ transform: translate(-50%);
+}
+
+.button span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+.button:hover span {
+  color: black;
+}
+
+.button::before,
+.button::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.button::before {
+ content: "";
+ background: #121212;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+
+
+.button1 {
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+ background: rgb(255, 132, 43);
+ color: ghostwhite;
+ margin-inline-start: 50%;
+ justify-content: center;
+ transform: translate(-50%);
+}
+
+.button1 span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+.button1:hover span {
+ color: black;
+}
+
+.button1::before,
+.button1::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.button1::before {
+ content: "";
+ background: #121212;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button1:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+
+
+</style>
+</head>
+<body>
+ 
+  <div class="imghome"><img src="img/home-bg.jpg"></div>
+  <div class="title"><p><b>Roboti</b></p>
+      <div class="title2"><p>Inteligenta artificiala este viitorul</p></div>
+  </div>
+<div class="topnav" id="myTopnav">
+  <a href="contact.html">Despre</a>
+  <div class="dropdown">
+    <button class="dropbtn">Intrebuintari
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="industria.html">Industria</a>
+      <a href="utilizari casnice.html">Utilizari casnice</a>
+      <a href="divertisment.html">Divertisment</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Fictiune 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cinematografie.html">Cinematografie</a>
+      <a href="cyberwarfare.html">Cyberwarfare</a>
+    </div>
+  </div> 
+  <a href="home.html" class="active">Acasa</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="content-home">
+  <div class="industrie"><p>Primul robot a fost introdus in domeniul industriei, in anul 1961, de firma General Motors, in statul New Jersey, SUA.
+						  Desi robotii au fost inventati in America, astazi Japonia este primul producator si utilizatori de roboti industriali. 
+						  Primul robot a fost adus din SUA in Japonia in anul 1967.
+              Pana in anul 1978, Japonia producea 10.000 de roboti pe 
+              an, iar pana in anul 1980, de doua ori pe atat.</p>
+    
+            <div class="pindustrie"><img src="img/industrie-1.png" alt="industrie" width="275" height="183"></div>
+            <a href="industria.html"><div class="button"><span>Citeste mai multe</span></div></a>
+            <div class="divertisment">
+              <div class="pdivertisment"><img src="img/divert-1.jfif" alt="industrie" width="275" height="183"></div>
+                <div class="textdivert"><p style="color:black">Roboții de jucărie sunt de câteva generații unele dintre cele mai preferate jucării pentru copii și nu numai. Mulți părinți au afirmat
+      că deși le cumpără copiilor lor roboți de jucărie, ajung chiar ei înșiși să se joace cu aceștia pentru că sunt din ce în ce mai inovativi,
+      interesanți și distractivi.</p></div>
+            <a href="divertisment.html"><div class="button1"><span>Citeste mai multe</span></div></a>
+      </div>
+    </div>
+	</div>
+</body>
+</html>
